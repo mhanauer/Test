@@ -1,4 +1,4 @@
-# Test---
+---
 title: "Week7"
 output:
   word_document: default
@@ -68,5 +68,7 @@ y is the predicted value of GAD7Diff, which is based on the intercept (expected 
 regressionDat = data.frame(GAD7PDiff = GAD7Post-GAD7Pre, treatment)
 regressionResults = lm(GAD7PDiff ~ treatment, data = regressionDat)
 summary(regressionResults)
+corr.test(GAD7PDiff, GAD7Pre)
+
 ```
 Next week we will talk about the assumptions of linear regression, more intrepretations, R^2 squared, and other diagnostis for evaluating model fit.  
